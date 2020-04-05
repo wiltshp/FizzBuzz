@@ -1,4 +1,4 @@
-require 'ext/fixnum'
+require './ext/fixnum'
 
 class FizzBuzz
   def self.calculate_bl number_given

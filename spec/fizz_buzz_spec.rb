@@ -1,4 +1,4 @@
-require 'lib/fizz_buzz'
+require './lib/fizz_buzz'
 
 describe FizzBuzz do
   context '#calculate' do

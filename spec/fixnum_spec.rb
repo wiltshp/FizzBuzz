@@ -1,4 +1,4 @@
-require 'ext/fixnum'
+require './ext/fixnum'
 
 describe Fixnum do
   context '#is_evenly_divisible_by?' do
@@ -26,15 +26,6 @@ describe Fixnum do
       expect(number.is_evenly_divisible_by?(5)).to be true
       expect(number.is_evenly_divisible_by?(10)).to be false
       expect(number.is_evenly_divisible_by?(15)).to be true
-    end
-  end
-
-  context '#is_not_evenly_divisible_by_3_5_or_15?' do
-    it 'will return true if the number is not evenly divisible by 3, 5 or 15' do
-      number = 2
-      expect(number.is_not_evenly_divisible_by_3_5_or_15?(3)).to be true
-      expect(number.is_not_evenly_divisible_by_3_5_or_15?(5)).to be true
-      expect(number.is_not_evenly_divisible_by_3_5_or_15?(15)).to be true
     end
   end
 end
